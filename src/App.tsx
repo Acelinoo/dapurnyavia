@@ -94,7 +94,11 @@ export const App: React.FC = () => {
       {/* Konten Halaman */}
       <main className="flex-1">
         {/* Bagian Hero Presisi Gambar 1 */}
-        <HeroSection onScrollToMenu={handleScrollToMenu} />
+        <HeroSection
+          onScrollToMenu={handleScrollToMenu}
+          onOpenCart={() => setIsCartOpen(true)}
+          totalCartItems={totalCartItemsCount}
+        />
 
         {/* Bagian Menu Best Seller */}
         <BestSellerSection

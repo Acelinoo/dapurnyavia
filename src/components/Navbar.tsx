@@ -12,21 +12,31 @@ export const Navbar: React.FC<NavbarProps> = ({ totalCartItems, onOpenCart }) =>
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      // Menampilkan sticky navbar hanya saat pengunjung menggulir ke bawah melewati Hero Section
+      setIsScrolled(window.scrollY > 160);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 transition-all duration-300">
-      {/* Bilah Informasi Operasional Formal (Tanpa Titik Neon) */}
+    <header
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+        isScrolled
+          ? 'translate-y-0 opacity-100 shadow-warm-md pointer-events-auto'
+          : '-translate-y-full opacity-0 pointer-events-none'
+      }`}
+    >
+      {/* Bilah Informasi Operasional Formal */}
       <div className="bg-[#591115] text-[#F3ECE1] text-xs py-2 px-4 border-b border-[#7A191E]/40">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 text-center sm:text-left">
           <div className="flex items-center gap-2 font-medium tracking-wide">
             <Clock className="w-3.5 h-3.5 text-[#EAD5C7]" />
             <span>
-              Buka Rabu – Senin: 10.00 – 21.00 WIB &bull; <strong className="text-white font-semibold underline decoration-[#DEC1AF] underline-offset-2">Hari Selasa Libur</strong>
+              Buka Rabu – Senin: 10.00 – 21.00 WIB &bull;{' '}
+              <strong className="text-white font-semibold underline decoration-[#DEC1AF] underline-offset-2">
+                Hari Selasa Libur
+              </strong>
             </span>
           </div>
           <div className="flex items-center gap-1.5 text-xs text-[#EAD5C7]">
@@ -36,14 +46,8 @@ export const Navbar: React.FC<NavbarProps> = ({ totalCartItems, onOpenCart }) =>
         </div>
       </div>
 
-      {/* Navigasi Utama */}
-      <nav
-        className={`transition-all duration-300 ${
-          isScrolled
-            ? 'bg-[#FAF6F0]/95 backdrop-blur-md shadow-warm-md py-3 border-b border-[#DEC1AF]/40'
-            : 'bg-transparent py-4'
-        }`}
-      >
+      {/* Navigasi Utama Sticky */}
+      <nav className="bg-[#FAF6F0]/95 backdrop-blur-md py-3 border-b border-[#DEC1AF]/40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between">
           {/* Logo & Identitas */}
           <a href="#" className="flex items-center gap-3 group">
@@ -62,7 +66,7 @@ export const Navbar: React.FC<NavbarProps> = ({ totalCartItems, onOpenCart }) =>
             </div>
           </a>
 
-          {/* Navigasi Desktop (Tanpa Pill Badge, Menggunakan Garis Bawah Elegan) */}
+          {/* Navigasi Desktop */}
           <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-[#231F20]">
             <a
               href="#"
