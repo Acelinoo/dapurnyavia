@@ -117,36 +117,20 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               {/* Efek Panggung / Halo Hangat di Belakang Foto */}
               <div className="absolute inset-0 bg-gradient-to-tr from-[#EAD5C7] to-[#DEC1AF] rounded-3xl filter blur-xl scale-95 -z-10" />
 
-              {/* Foto Utama: Udang Keju Crispy dengan Tarikan Keju Molor */}
-              <div className="relative bg-white p-3 sm:p-3.5 rounded-3xl border-2 border-[#DEC1AF] shadow-warm-lg overflow-hidden group">
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-[#F3ECE1]">
+              {/* Foto Utama: Udang Keju Crispy Rekomendasi Dapurnya viaaa */}
+              <div className="relative bg-white p-3 sm:p-4 rounded-3xl border-2 border-[#DEC1AF] shadow-warm-lg overflow-visible group">
+                <div className="relative aspect-square rounded-2xl overflow-hidden bg-[#F3ECE1] shadow-inner">
                   <img
-                    src="/images/dishes/udang-keju.jpg"
+                    src="/images/hero-udang-keju.jpg"
                     alt="Udang Keju Crispy Mozarella Lumer — Dapurnya viaaa"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
                   
-                  {/* Label Keterangan di Atas Foto */}
-                  <div className="absolute bottom-3 left-3 right-3 text-white flex items-end justify-between">
-                    <div>
-                      <span className="text-[10px] font-mono font-bold tracking-widest text-[#EAD5C7] uppercase block">
-                        [MENU BEST SELLER]
-                      </span>
-                      <h3 className="font-display font-bold text-base sm:text-lg leading-tight">
-                        Udang Keju Crispy
-                      </h3>
-                      <p className="text-[11px] text-[#EAD5C7] mt-0.5">
-                        Isian keju mozarella meleleh gurih
-                      </p>
-                    </div>
-
-                    <button
-                      onClick={onScrollToMenu}
-                      className="px-3 py-1.5 rounded-lg bg-[#7A191E] text-white text-xs font-semibold hover:bg-[#591115] transition-colors shadow-sm"
-                    >
-                      Pesan
-                    </button>
+                  {/* Tag Elegan Best Seller di Pojok Kanan Atas Foto */}
+                  <div className="absolute top-3.5 right-3.5 z-10">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#7A191E]/95 text-white font-mono font-bold text-[11px] tracking-wider uppercase shadow-md backdrop-blur-xs border border-white/20">
+                      🔥 MENU BEST SELLER
+                    </span>
                   </div>
                 </div>
 
