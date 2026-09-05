@@ -20,13 +20,7 @@ export const Navbar: React.FC<NavbarProps> = ({ totalCartItems, onOpenCart }) =>
   }, []);
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        isScrolled
-          ? 'translate-y-0 opacity-100 shadow-warm-md pointer-events-auto'
-          : '-translate-y-full opacity-0 pointer-events-none'
-      }`}
-    >
+    <header className="fixed top-0 left-0 right-0 z-40 transition-all duration-300">
       {/* Bilah Informasi Operasional Formal */}
       <div className="bg-[#591115] text-[#F3ECE1] text-xs py-2 px-4 border-b border-[#7A191E]/40">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 text-center sm:text-left">
@@ -47,7 +41,13 @@ export const Navbar: React.FC<NavbarProps> = ({ totalCartItems, onOpenCart }) =>
       </div>
 
       {/* Navigasi Utama Sticky */}
-      <nav className="bg-[#FAF6F0]/95 backdrop-blur-md py-3 border-b border-[#DEC1AF]/40">
+      <nav
+        className={`transition-all duration-300 ${
+          isScrolled
+            ? 'bg-[#FAF6F0]/95 backdrop-blur-md shadow-warm-md py-2.5 border-b border-[#DEC1AF]/40'
+            : 'bg-[#FAF6F0]/85 backdrop-blur-xs py-3.5 border-b border-[#DEC1AF]/20'
+        }`}
+      >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between">
           {/* Logo & Identitas */}
           <a href="#" className="flex items-center gap-3 group">

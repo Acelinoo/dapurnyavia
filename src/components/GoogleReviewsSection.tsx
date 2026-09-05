@@ -55,13 +55,13 @@ export const GoogleReviewsSection: React.FC = () => {
               </a>
 
               <a
-                href={BUSINESS_INFO.googleMapsUrl}
+                href={BUSINESS_INFO.writeReviewUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-[#7A191E] text-white text-xs sm:text-sm font-semibold hover:bg-[#591115] transition-all shadow-warm-sm"
               >
                 <MessageSquarePlus className="w-4 h-4" />
-                <span>Tulis Ulasan</span>
+                <span>Tulis Ulasan di Google</span>
               </a>
             </div>
 
