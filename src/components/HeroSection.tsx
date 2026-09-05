@@ -14,12 +14,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   totalCartItems,
 }) => {
   return (
-    <section className="relative pt-24 sm:pt-32 pb-16 sm:pb-24 overflow-hidden bg-[#FAF6F0] culinary-pattern border-b border-[#DEC1AF]/50">
+    <section className="relative min-h-[calc(100vh-1rem)] lg:min-h-screen flex items-center pt-32 sm:pt-36 lg:pt-28 pb-16 sm:pb-20 overflow-hidden bg-[#FAF6F0] culinary-pattern border-b border-[#DEC1AF]/50">
       
       {/* Ornamen Garis Halus di Paling Atas */}
       <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#7A191E] via-[#B91C1C] to-[#7A191E]" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 w-full my-auto">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
