@@ -35,8 +35,8 @@ export const BestSellerSection: React.FC<BestSellerSectionProps> = ({ items, onS
               key={dish.id}
               className="bg-white rounded-xl overflow-hidden border border-[#DEC1AF]/60 shadow-warm-sm hover:shadow-warm-lg transition-all duration-300 flex flex-col group"
             >
-              {/* Gambar Hidangan */}
-              <div className="relative aspect-[4/3] overflow-hidden bg-[#F3ECE1]">
+              {/* Gambar Hidangan Poster Asli */}
+              <div className="relative aspect-square overflow-hidden bg-[#F3ECE1]">
                 <img
                   src={dish.image}
                   alt={dish.name}

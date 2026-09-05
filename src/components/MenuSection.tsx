@@ -61,8 +61,8 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ items, onSelectItem })
               key={dish.id}
               className="bg-white rounded-xl overflow-hidden border border-[#DEC1AF]/50 shadow-warm-sm hover:shadow-warm-md transition-all duration-300 flex flex-col group"
             >
-              {/* Foto Menu */}
-              <div className="relative aspect-[16/10] overflow-hidden bg-[#F3ECE1]">
+              {/* Foto Menu Poster Asli */}
+              <div className="relative aspect-square overflow-hidden bg-[#F3ECE1]">
                 <img
                   src={dish.image}
                   alt={dish.name}
