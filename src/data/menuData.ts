@@ -16,7 +16,7 @@ export interface MenuItem {
 export const MENU_ITEMS: MenuItem[] = [
   {
     id: 'udang-keju-crispy',
-    name: 'Udang Keju Crispy (Ala Gacoan)',
+    name: 'Udang Keju Crispy',
     category: 'udang',
     categoryLabel: 'Udang Keju',
     price: 20000,

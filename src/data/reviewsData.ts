@@ -15,7 +15,7 @@ export const GOOGLE_REVIEWS_DATA: GoogleReview[] = [
     reviewerBadge: 'Local Guide • 46 Ulasan',
     rating: 5,
     relativeTime: '1 minggu lalu',
-    text: 'Basreng bumbu chili oil-nya benar-benar nagih! Aroma daun jeruknya sangat harum dan bumbu pedas gurihnya meresap rata tanpa bikin tenggorokan serak. Udang kejunya juga renyah banget di luar dan kejunya meleleh persis seperti udang keju gacoan. Lokasi pas di depan taman kota Soreang.',
+    text: 'Basreng bumbu chili oil-nya benar-benar nagih! Aroma daun jeruknya sangat harum dan bumbu pedas gurihnya meresap rata tanpa bikin tenggorokan serak. Udang kejunya juga renyah banget di luar dan kejunya meleleh lumer melimpah. Lokasi pas di depan taman kota Soreang.',
     highlightDish: 'Basreng Chili Oil & Udang Keju'
   },
   {

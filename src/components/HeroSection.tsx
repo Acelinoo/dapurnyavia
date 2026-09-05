@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, ChefHat, ArrowDown, ShoppingBag, Star, MessageSquarePlus, MapPin, Flame } from 'lucide-react';
+import { Clock, ChefHat, ArrowDown, ShoppingBag, Star, MessageSquarePlus, Flame } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/reviewsData';
 
 interface HeroSectionProps {
@@ -25,13 +25,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           
           {/* Kolom Kiri: Tipografi Editorial & Tombol Aksi */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            
-            {/* Lokasi & Status Operasional */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white border border-[#DEC1AF] shadow-xs text-xs text-[#231F20]">
-              <MapPin className="w-3.5 h-3.5 text-[#7A191E] flex-shrink-0" />
-              <span className="font-semibold text-[#7A191E]">Soreang, Bandung:</span>
-              <span>Depan Taman Kota &bull; <strong>Selasa Libur</strong></span>
-            </div>
 
             {/* Judul Utama Editorial */}
             <h1 className="font-display font-black text-3xl sm:text-5xl md:text-[3.25rem] text-[#231F20] tracking-tight leading-[1.15]">
@@ -46,7 +39,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             {/* Subjudul & Narasi Kuliner Sesuai Naskah Asli */}
             <p className="text-sm sm:text-base md:text-lg text-[#786F66] leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Sensasi renyah <strong>Udang Keju Crispy</strong> ala gacoan yang molor, <strong>Dimsum Keju Lumer</strong> goreng, <strong>Basreng Chili Oil</strong> daun jeruk yang harum pedas, serta <strong>Cireng Isi</strong> gurih. Selalu digoreng dadakan saat pesanan Anda tiba!
+              Sensasi renyah <strong>Udang Keju Crispy</strong> yang molor, <strong>Dimsum Keju Lumer</strong> goreng, <strong>Basreng Chili Oil</strong> daun jeruk yang harum pedas, serta <strong>Cireng Isi</strong> gurih. Selalu digoreng dadakan saat pesanan Anda tiba!
             </p>
 
             {/* Tombol Aksi Utama */}

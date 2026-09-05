@@ -10,14 +10,13 @@ export interface CartItem {
   image: string;
 }
 
-export type OrderMethod = 'takeaway' | 'delivery' | 'dinein';
+export type OrderMethod = 'takeaway' | 'delivery';
 
 export interface OrderCustomerInfo {
   name: string;
   phone: string;
   method: OrderMethod;
   address?: string;
-  tableNumber?: string;
   pickupTime?: string;
   notes?: string;
 }

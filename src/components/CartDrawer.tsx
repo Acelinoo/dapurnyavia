@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import type { CartItem, OrderMethod } from '../types/cart';
 import { BUSINESS_INFO } from '../data/reviewsData';
-import { X, Plus, Minus, Trash2, Send, ShoppingBag, MapPin, Clock, Utensils } from 'lucide-react';
+import { X, Plus, Minus, Trash2, Send, ShoppingBag, MapPin, Clock } from 'lucide-react';
 
 interface CartDrawerProps {
   isOpen: boolean;
@@ -24,7 +24,6 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
   const [customerName, setCustomerName] = useState('');
   const [customerPhone, setCustomerPhone] = useState('');
   const [deliveryAddress, setDeliveryAddress] = useState('');
-  const [tableNumber, setTableNumber] = useState('');
   const [pickupTime, setPickupTime] = useState('');
   const [generalNotes, setGeneralNotes] = useState('');
   const [formError, setFormError] = useState('');
@@ -45,17 +44,12 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
       setFormError('Silakan isi alamat lengkap pengantaran.');
       return;
     }
-    if (method === 'dinein' && !tableNumber.trim()) {
-      setFormError('Silakan isi nomor meja Anda.');
-      return;
-    }
     setFormError('');
 
     // Format Teks Pesanan WhatsApp Formal & Terstruktur
     const methodLabels: Record<OrderMethod, string> = {
       takeaway: 'Ambil Sendiri (Takeaway)',
-      delivery: 'Pesan Antar (Delivery)',
-      dinein: 'Makan di Tempat (Dine-in)'
+      delivery: 'Pesan Antar (Delivery)'
     };
 
     let message = `*FORMULIR PEMESANAN — DAPURNYA. VIAAA*\n`;
@@ -90,8 +84,6 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
     if (method === 'delivery') {
       message += `• Alamat Antar: ${deliveryAddress.trim()}\n`;
-    } else if (method === 'dinein') {
-      message += `• No. Meja: ${tableNumber.trim()}\n`;
     } else if (method === 'takeaway' && pickupTime.trim()) {
       message += `• Estimasi Ambil: ${pickupTime.trim()}\n`;
     }
@@ -240,7 +232,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                     [METODE PEMESANAN]
                   </label>
 
-                  <div className="grid grid-cols-3 gap-2">
+                  <div className="grid grid-cols-2 gap-2">
                     <button
                       type="button"
                       onClick={() => setMethod('takeaway')}
@@ -251,7 +243,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                       }`}
                     >
                       <Clock className="w-4 h-4" />
-                      <span>Takeaway</span>
+                      <span>Takeaway (Bungkus)</span>
                     </button>
 
                     <button
@@ -264,20 +256,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                       }`}
                     >
                       <MapPin className="w-4 h-4" />
-                      <span>Delivery</span>
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={() => setMethod('dinein')}
-                      className={`p-2.5 rounded-lg border text-xs font-semibold flex flex-col items-center justify-center gap-1 transition-all ${
-                        method === 'dinein'
-                          ? 'border-[#7A191E] bg-[#FAF6F0] text-[#7A191E]'
-                          : 'border-[#DEC1AF]/60 text-[#786F66] hover:text-[#231F20]'
-                      }`}
-                    >
-                      <Utensils className="w-4 h-4" />
-                      <span>Dine-in</span>
+                      <span>Delivery (Kirim)</span>
                     </button>
                   </div>
 
@@ -319,21 +298,6 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                           value={deliveryAddress}
                           onChange={(e) => setDeliveryAddress(e.target.value)}
                           placeholder="Nama jalan, nomor rumah, perumahan, patokan..."
-                          className="w-full p-2.5 rounded-lg border border-[#DEC1AF] focus:outline-none focus:border-[#7A191E] bg-[#FAF6F0]"
-                        />
-                      </div>
-                    )}
-
-                    {method === 'dinein' && (
-                      <div>
-                        <label className="block text-[#786F66] mb-1 font-medium">
-                          Nomor Meja *
-                        </label>
-                        <input
-                          type="text"
-                          value={tableNumber}
-                          onChange={(e) => setTableNumber(e.target.value)}
-                          placeholder="Contoh: Meja 04"
                           className="w-full p-2.5 rounded-lg border border-[#DEC1AF] focus:outline-none focus:border-[#7A191E] bg-[#FAF6F0]"
                         />
                       </div>
