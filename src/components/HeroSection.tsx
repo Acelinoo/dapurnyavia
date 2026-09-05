@@ -35,9 +35,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             {/* Judul Utama Editorial */}
             <h1 className="font-display font-black text-3xl sm:text-5xl md:text-[3.25rem] text-[#231F20] tracking-tight leading-[1.15]">
-              Hidangan Rumahan, <br />
-              <span className="text-[#7A191E] relative inline-block">
-                Rasa Bintang Lima.
+              Jajanan Favorit Gen Z, <br />
+              <span className="text-[#7A191E] relative inline-block font-serif italic font-medium sm:font-semibold">
+                Made with Love Especially for You.
                 <svg className="absolute -bottom-1.5 left-0 w-full h-2 text-[#7A191E]/30" viewBox="0 0 100 10" preserveAspectRatio="none">
                   <path d="M0 5 Q 50 10, 100 5" stroke="currentColor" strokeWidth="3" fill="none" />
                 </svg>
