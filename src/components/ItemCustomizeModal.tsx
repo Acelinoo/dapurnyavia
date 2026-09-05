@@ -46,8 +46,13 @@ export const ItemCustomizeModal: React.FC<ItemCustomizeModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fadeIn">
-      <div className="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-[#DEC1AF] max-h-[90vh] flex flex-col">
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-sm animate-fadeIn"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose();
+      }}
+    >
+      <div className="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-[#DEC1AF] max-h-[92vh] flex flex-col animate-scaleUp">
         
         {/* Header Gambar & Tombol Tutup */}
         <div className="relative h-48 sm:h-56 bg-[#F3ECE1] overflow-hidden">
