@@ -57,7 +57,7 @@ export const BUSINESS_INFO = {
     lng: 107.542353
   },
   googleMapsUrl: 'https://www.google.com/maps/place/Dapurnya+via/@-7.0279687,107.5397727,17z/data=!3m1!4b1!4m6!3m5!1s0x2e68ed00587c25d7:0x2deda361c80e8df6!8m2!3d-7.027974!4d107.542353!16s%2Fg%2F11z0n9l222',
-  writeReviewUrl: 'https://www.google.com/search?hl=id-ID&gl=id&q=Dapurnya+via+Jl.+Raya+Gading+Tutuka+Soreang&ludocid=3309489240890674678&lsig=AB86z5V3R4n_example#lrd=0x2e68ed00587c25d7:0x2deda361c80e8df6,3',
+  writeReviewUrl: 'https://search.google.com/local/writereview?placeid=ChIJ1yV8WADtaC4R9o0OyGGj7S0',
   operationalSchedule: {
     tuesday: 'LIBUR (Tutup Setiap Hari Selasa)',
     regularDays: 'Rabu – Senin: 10.00 – 21.00 WIB'
