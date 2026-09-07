@@ -46,54 +46,58 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
     }
     setFormError('');
 
-    // Format Teks Pesanan WhatsApp Formal & Terstruktur
+    // Format Teks Pesanan WhatsApp Sederhana, Bersih & Natural
     const methodLabels: Record<OrderMethod, string> = {
       takeaway: 'Ambil Sendiri (Takeaway)',
       delivery: 'Pesan Antar (Delivery)'
     };
 
-    let message = `*FORMULIR PEMESANAN — DAPURNYA VIA*\n`;
-    message += `_Jl. Raya Gading Tutuka, Depan Taman Kota Soreang_\n`;
-    message += `_Website: https://dapurnyaviaaa.vercel.app/_\n`;
-    message += `--------------------------------------------------\n`;
-    message += `Halo admin Dapurnya Via, saya ingin memesan menu:\n\n`;
+    let message = `FORMULIR PEMESANAN DAPURNYA VIA\n`;
+    message += `Lokasi: Jl. Raya Gading Tutuka, Depan Taman Kota Soreang\n`;
+    message += `Website: https://dapurnyaviaaa.vercel.app/\n\n`;
+    message += `Halo Admin Dapurnya Via, saya ingin memesan:\n\n`;
 
-    cartItems.forEach((item, idx) => {
+    const itemBlocks = cartItems.map((item) => {
       const itemSubtotal = item.price * item.quantity;
-      message += `${idx + 1}. *${item.name}* (x${item.quantity})\n`;
+      const lines: string[] = [
+        item.name,
+        `Jumlah: ${item.quantity}`
+      ];
       if (item.portionLabel) {
-        message += `   - Porsi: ${item.portionLabel}\n`;
+        lines.push(`Porsi: ${item.portionLabel}`);
       }
       if (item.spicyLevel) {
-        message += `   - Varian / Pedas: ${item.spicyLevel}\n`;
+        lines.push(`Varian: ${item.spicyLevel}`);
       }
-      if (item.notes) {
-        message += `   - Catatan: ${item.notes}\n`;
+      if (item.notes && item.notes.trim()) {
+        lines.push(`Catatan: ${item.notes.trim()}`);
       }
-      message += `   - Subtotal: Rp ${itemSubtotal.toLocaleString('id-ID')}\n\n`;
+      lines.push(`Subtotal: Rp${itemSubtotal.toLocaleString('id-ID')}`);
+      return lines.join('\n');
     });
 
-    message += `--------------------------------------------------\n`;
-    message += `*TOTAL ESTIMASI: Rp ${totalPrice.toLocaleString('id-ID')}*\n`;
-    message += `--------------------------------------------------\n`;
-    message += `*RINCIAN PEMESAN:*\n`;
-    message += `• Nama: ${customerName.trim()}\n`;
-    if (customerPhone.trim()) {
-      message += `• No. Kontak: ${customerPhone.trim()}\n`;
-    }
-    message += `• Metode: ${methodLabels[method]}\n`;
+    message += itemBlocks.join('\n\n');
+    message += `\n\nTotal Estimasi: Rp${totalPrice.toLocaleString('id-ID')}\n\n`;
 
-    if (method === 'delivery') {
-      message += `• Alamat Antar: ${deliveryAddress.trim()}\n`;
+    message += `Data Pemesan:\n`;
+    message += `Nama: ${customerName.trim()}\n`;
+    if (customerPhone.trim()) {
+      message += `No. Kontak: ${customerPhone.trim()}\n`;
+    }
+    message += `Metode: ${methodLabels[method]}\n`;
+
+    if (method === 'delivery' && deliveryAddress.trim()) {
+      message += `Alamat: ${deliveryAddress.trim()}\n`;
     } else if (method === 'takeaway' && pickupTime.trim()) {
-      message += `• Estimasi Ambil: ${pickupTime.trim()}\n`;
+      message += `Estimasi Ambil: ${pickupTime.trim()}\n`;
     }
 
     if (generalNotes.trim()) {
-      message += `• Catatan Tambahan: ${generalNotes.trim()}\n`;
+      message += `Catatan: ${generalNotes.trim()}\n`;
     }
 
-    message += `\nMohon konfirmasi ketersediaan dan total pembayarannya. Terima kasih!`;
+    message += `\nMohon konfirmasi ketersediaan menu dan total pembayaran.\n`;
+    message += `Terima kasih.`;
 
     const encodedMessage = encodeURIComponent(message);
     const waUrl = `https://api.whatsapp.com/send?phone=${BUSINESS_INFO.whatsappNumber}&text=${encodedMessage}`;
