@@ -33,7 +33,7 @@ export const AboutSection: React.FC = () => {
               [TENTANG KAMI]
             </span>
             <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl text-[#231F20] tracking-tight leading-snug">
-              Dedikasi Rasa Rumahan dengan Kualitas Bintang Lima
+              Dedikasi Jajanan Home Made Favorit Gen Z
             </h2>
             <div className="w-16 h-0.5 bg-[#7A191E] my-4" />
 

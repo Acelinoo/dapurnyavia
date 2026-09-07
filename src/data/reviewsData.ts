@@ -52,7 +52,7 @@ export const BUSINESS_INFO = {
   brandName: 'Dapurnya Via',
   domain: 'dapurnyaviaaa.vercel.app',
   websiteUrl: 'https://dapurnyaviaaa.vercel.app/',
-  tagline: 'Hidangan Rumahan, Rasa Bintang Lima.',
+  tagline: 'Jajanan Home Made Favorit Gen Z.',
   subTagline: 'Hadirkan Keajaiban Dapur ke Meja Makan Anda.',
   address: 'Jl. Raya Gading Tutuka, Cingcin, Kec. Soreang (Depan Taman Kota Soreang), Bandung, Jawa Barat',
   coordinate: {
