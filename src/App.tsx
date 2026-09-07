@@ -16,7 +16,7 @@ export const App: React.FC = () => {
   // State Keranjang Belanja dengan Penyimpanan Lokal (LocalStorage)
   const [cartItems, setCartItems] = useState<CartItem[]>(() => {
     try {
-      const saved = localStorage.getItem('dapurnyaviaaa_cart');
+      const saved = localStorage.getItem('dapurnyaviaaa_cart') || localStorage.getItem('dapurnyavia_cart');
       return saved ? JSON.parse(saved) : [];
     } catch {
       return [];

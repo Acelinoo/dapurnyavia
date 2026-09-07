@@ -24,7 +24,7 @@ export const BestSellerSection: React.FC<BestSellerSectionProps> = ({ items, onS
           </h2>
           <div className="w-16 h-0.5 bg-[#7A191E] mx-auto my-3" />
           <p className="text-sm sm:text-base text-[#786F66]">
-            Empat sajian kuliner andalan paling digemari pelanggan Dapurnya. viaaa di Soreang dengan bumbu khas dan keju lumer berkualitas.
+            Empat sajian kuliner andalan paling digemari pelanggan Dapurnya Via di Soreang dengan bumbu khas dan keju lumer berkualitas.
           </p>
         </div>
 

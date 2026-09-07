@@ -26,7 +26,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ items, onSelectItem })
             [DAFTAR HIDANGAN LENGKAP]
           </span>
           <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl text-[#231F20] tracking-tight">
-            Katalog Menu Dapurnya. viaaa
+            Katalog Menu Dapurnya Via
           </h2>
           <div className="w-16 h-0.5 bg-[#7A191E] mx-auto my-3" />
           <p className="text-sm sm:text-base text-[#786F66]">

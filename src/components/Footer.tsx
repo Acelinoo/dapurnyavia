@@ -14,12 +14,12 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-3">
               <img
                 src="/images/logo.png"
-                alt="Logo Dapurnya. viaaa"
+                alt="Logo Dapurnya Via"
                 className="w-12 h-12 rounded-lg bg-white p-1 object-contain shadow-sm"
               />
               <div>
                 <span className="font-display font-bold text-xl text-white block leading-tight">
-                  Dapurnya. viaaa
+                  Dapurnya Via
                 </span>
                 <span className="text-xs text-[#EAD5C7]">
                   {BUSINESS_INFO.tagline}
@@ -90,7 +90,7 @@ export const Footer: React.FC = () => {
 
               <div className="pt-2">
                 <a
-                  href={`https://api.whatsapp.com/send?phone=${BUSINESS_INFO.whatsappNumber}&text=Halo%20Dapurnya.viaaa,%20saya%20ingin%20bertanya%20menu`}
+                  href={`https://api.whatsapp.com/send?phone=${BUSINESS_INFO.whatsappNumber}&text=Halo%20Dapurnya%20Via,%20saya%20ingin%20bertanya%20menu`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#25D366] text-white text-xs font-bold hover:bg-[#1EBE5D] transition-colors shadow-sm"
@@ -107,7 +107,14 @@ export const Footer: React.FC = () => {
         {/* Baris Hak Cipta Formal */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-[#DEC1AF]/80 gap-3 text-center sm:text-left">
           <p>
-            &copy; {new Date().getFullYear()} <strong>Dapurnya. viaaa</strong>. Seluruh hak cipta dilindungi.
+            &copy; {new Date().getFullYear()} <strong>Dapurnya Via</strong> &bull;{' '}
+            <a
+              href="https://dapurnyaviaaa.vercel.app/"
+              className="hover:text-white transition-colors underline decoration-[#DEC1AF]/40 underline-offset-2"
+            >
+              dapurnyaviaaa.vercel.app
+            </a>
+            . Seluruh hak cipta dilindungi.
           </p>
           <p className="flex items-center justify-center gap-1">
             <span>Dibuat dengan cinta dan cita rasa otentik untuk masyarakat Soreang.</span>

@@ -52,10 +52,11 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
       delivery: 'Pesan Antar (Delivery)'
     };
 
-    let message = `*FORMULIR PEMESANAN — DAPURNYA. VIAAA*\n`;
+    let message = `*FORMULIR PEMESANAN — DAPURNYA VIA*\n`;
     message += `_Jl. Raya Gading Tutuka, Depan Taman Kota Soreang_\n`;
+    message += `_Website: https://dapurnyaviaaa.vercel.app/_\n`;
     message += `--------------------------------------------------\n`;
-    message += `Halo admin Dapurnya. viaaa, saya ingin memesan menu:\n\n`;
+    message += `Halo admin Dapurnya Via, saya ingin memesan menu:\n\n`;
 
     cartItems.forEach((item, idx) => {
       const itemSubtotal = item.price * item.quantity;
@@ -145,7 +146,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   Keranjang Belanja Masih Kosong
                 </p>
                 <p className="text-xs text-[#786F66] mt-1 max-w-xs mx-auto">
-                  Silakan pilih hidangan favorit Anda dari katalog menu Dapurnya. viaaa.
+                  Silakan pilih hidangan favorit Anda dari katalog menu Dapurnya Via.
                 </p>
               </div>
             ) : (
@@ -362,7 +363,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               </button>
 
               <p className="text-[11px] text-[#786F66] text-center">
-                Pesanan akan langsung terhubung ke WhatsApp resmi Dapurnya. viaaa
+                Pesanan akan langsung terhubung ke WhatsApp resmi Dapurnya Via
               </p>
             </div>
           )}

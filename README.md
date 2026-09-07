@@ -1,6 +1,8 @@
-# Dapurnya. viaaa — Website Resmi
+# Dapurnya Via — Website Resmi
 
-Website resmi untuk usaha kuliner **Dapurnya. viaaa** yang berlokasi di Jl. Raya Gading Tutuka, Cingcin, Kec. Soreang (Depan Taman Kota Soreang), Bandung, Jawa Barat.
+> **Live Production URL**: [https://dapurnyaviaaa.vercel.app/](https://dapurnyaviaaa.vercel.app/)
+
+Website resmi untuk usaha kuliner **Dapurnya Via** yang berlokasi di Jl. Raya Gading Tutuka, Cingcin, Kec. Soreang (Depan Taman Kota Soreang), Bandung, Jawa Barat.
 
 ---
 
@@ -13,8 +15,10 @@ Website resmi untuk usaha kuliner **Dapurnya. viaaa** yang berlokasi di Jl. Raya
 
 ---
 
-## 🚀 Fitur Utama
-- **Hero Section**: Showcase fotografi kuliner lezat Dapurnya. viaaa, headline *"Jajanan Favorit Gen Z, Made with Love Especially for You"*, dan tombol pemesanan langsung.
+## 🚀 Fitur Utama & Optimasi SEO
+- **Domain & Canonical URL**: Produksi resmi di `https://dapurnyaviaaa.vercel.app/`.
+- **Search Engine Optimization (SEO)**: Dilengkapi `robots.txt`, `sitemap.xml`, Open Graph, Twitter/X Card, serta JSON-LD Structured Data Schema.org (Restaurant).
+- **Hero Section**: Showcase fotografi kuliner lezat Dapurnya Via, headline *"Jajanan Favorit Gen Z, Made with Love Especially for You"*, dan tombol pemesanan langsung.
 - **Katalog Menu Interaktif**: Tata letak grid 2 kolom pada ponsel seluler, navigasi kategori minimalis, dan popup detail menu saat kartu ditekan.
 - **Keranjang Belanja & WhatsApp Direct**: Pemilihan porsi, tingkat kepedasan, metode pemesanan (*Takeaway* & *Delivery*), serta generator pesan WhatsApp otomatis yang rapi dan terstruktur.
 - **Integrasi Google Reviews**: Menampilkan rating resmi 4.9 dari ulasan nyata Google Maps di Soreang dengan tautan langsung menuju formulir ulasan Google Maps.
@@ -27,6 +31,7 @@ Website resmi untuk usaha kuliner **Dapurnya. viaaa** yang berlokasi di Jl. Raya
 - **Styling**: Tailwind CSS v3
 - **Icons**: Lucide React
 - **Typography**: Google Fonts (*Plus Jakarta Sans* & *Outfit*)
+- **SEO & Metadata**: JSON-LD Schema.org Restaurant, Open Graph, Sitemap XML, Robots.txt
 
 ---
 
@@ -45,4 +50,4 @@ npm run build
 
 ---
 
-*Hak Cipta &copy; 2026 Dapurnya. viaaa. Seluruh hak cipta dilindungi undang-undang.*
+*Hak Cipta &copy; 2026 Dapurnya Via. Seluruh hak cipta dilindungi undang-undang.*

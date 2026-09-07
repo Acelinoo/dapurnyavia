@@ -53,12 +53,12 @@ export const Navbar: React.FC<NavbarProps> = ({ totalCartItems, onOpenCart }) =>
           <a href="#" className="flex items-center gap-3 group">
             <img
               src="/images/logo.png"
-              alt="Logo Dapurnya. viaaa"
+              alt="Logo Dapurnya Via"
               className="w-10 h-10 object-contain rounded-md shadow-sm border border-[#DEC1AF]/50 group-hover:scale-105 transition-transform"
             />
             <div className="text-left">
               <span className="font-display font-bold text-xl tracking-tight text-[#7A191E] block leading-none">
-                Dapurnya. <span className="text-[#231F20]">viaaa</span>
+                Dapurnya <span className="text-[#231F20]">Via</span>
               </span>
               <span className="text-[10px] tracking-widest text-[#786F66] uppercase font-medium mt-0.5 block">
                 Soreang &bull; Est. 2024

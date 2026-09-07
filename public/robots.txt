@@ -1,0 +1,7 @@
+# robots.txt untuk Dapurnya Via (Soreang, Bandung)
+User-agent: *
+Allow: /
+
+# Sitemap resmi
+Sitemap: https://dapurnyaviaaa.vercel.app/sitemap.xml
+Host: https://dapurnyaviaaa.vercel.app

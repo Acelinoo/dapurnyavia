@@ -17,7 +17,7 @@ export const GoogleReviewsSection: React.FC = () => {
           </h2>
           <div className="w-16 h-0.5 bg-[#7A191E] mx-auto my-3" />
           <p className="text-sm sm:text-base text-[#786F66]">
-            Ulasan asli dari para pengunjung dan penikmat kuliner Dapurnya. viaaa di Google Maps Soreang, Bandung.
+            Ulasan asli dari para pengunjung dan penikmat kuliner Dapurnya Via di Google Maps Soreang, Bandung.
           </p>
         </div>
 

@@ -110,12 +110,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               {/* Efek Panggung / Halo Hangat di Belakang Foto */}
               <div className="absolute inset-0 bg-gradient-to-tr from-[#EAD5C7] to-[#DEC1AF] rounded-3xl filter blur-xl scale-95 -z-10" />
 
-              {/* Foto Utama: Udang Keju Crispy Rekomendasi Dapurnya viaaa */}
+              {/* Foto Utama: Udang Keju Crispy Rekomendasi Dapurnya Via */}
               <div className="relative bg-white p-3 sm:p-4 rounded-3xl border-2 border-[#DEC1AF] shadow-warm-lg overflow-visible group">
                 <div className="relative aspect-square rounded-2xl overflow-hidden bg-[#F3ECE1] shadow-inner">
                   <img
                     src="/images/hero-udang-keju.jpg"
-                    alt="Udang Keju Crispy Mozarella Lumer — Dapurnya viaaa"
+                    alt="Udang Keju Crispy Mozarella Lumer — Dapurnya Via"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   

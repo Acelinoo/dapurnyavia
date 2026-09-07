@@ -13,7 +13,7 @@ export const AboutSection: React.FC = () => {
             <div className="relative mx-auto max-w-sm rounded-2xl overflow-hidden shadow-warm-lg border-2 border-[#DEC1AF] bg-white p-3">
               <img
                 src="/images/dishes/dimsum-keju.jpg"
-                alt="Keju Lumer Dapurnya. viaaa"
+                alt="Keju Lumer Dapurnya Via"
                 className="w-full h-80 object-cover rounded-xl"
               />
               <div className="p-4 text-center bg-[#FAF6F0] rounded-lg mt-3 border border-[#DEC1AF]/50">
@@ -38,7 +38,7 @@ export const AboutSection: React.FC = () => {
             <div className="w-16 h-0.5 bg-[#7A191E] my-4" />
 
             <p className="text-sm sm:text-base text-[#786F66] leading-relaxed mb-4">
-              <strong>Dapurnya. viaaa</strong> bermula dari kecintaan mendalam terhadap kreasi kuliner gurih rumahan. Kami meyakini bahwa hidangan istimewa tidak harus mahal, namun wajib diolah dengan bahan-bahan bermutu tinggi dan kebersihan yang terjaga.
+              <strong>Dapurnya Via</strong> bermula dari kecintaan mendalam terhadap kreasi kuliner gurih rumahan. Kami meyakini bahwa hidangan istimewa tidak harus mahal, namun wajib diolah dengan bahan-bahan bermutu tinggi dan kebersihan yang terjaga.
             </p>
 
             <p className="text-sm sm:text-base text-[#786F66] leading-relaxed mb-8">

@@ -50,7 +50,7 @@ export const LocationSection: React.FC = () => {
                     {BUSINESS_INFO.address}
                   </p>
                   <p className="text-xs text-[#7A191E] font-medium mt-2">
-                    Patokan: Tepat di depan Taman Kota Soreang, gerai dengan kanopi bergaris merah putih khas Dapurnya. viaaa.
+                    Patokan: Tepat di depan Taman Kota Soreang, gerai dengan kanopi bergaris merah putih khas Dapurnya Via.
                   </p>
                 </div>
               </div>

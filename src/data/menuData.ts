@@ -84,7 +84,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'paket-combo-ngemil-puas',
-    name: 'Paket Kombo Puas Dapurnya.viaaa',
+    name: 'Paket Kombo Puas Dapurnya Via',
     category: 'bestseller',
     categoryLabel: 'Paket Hemat',
     price: 38000,

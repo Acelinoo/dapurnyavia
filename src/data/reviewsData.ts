@@ -42,13 +42,16 @@ export const GOOGLE_REVIEWS_DATA: GoogleReview[] = [
     reviewerBadge: 'Ulasan Terverifikasi Google',
     rating: 5,
     relativeTime: '1 bulan lalu',
-    text: 'Sering pesan untuk camilan sore keluarga. Anak-anak paling suka udang keju dan dimsumnya karena kejunya melimpah. Pelayanannya ramah sekali. Sukses terus Dapurnya.viaaa!',
+    text: 'Sering pesan untuk camilan sore keluarga. Anak-anak paling suka udang keju dan dimsumnya karena kejunya melimpah. Pelayanannya ramah sekali. Sukses terus Dapurnya Via!',
     highlightDish: 'Udang Keju & Dimsum Keju'
   }
 ];
 
 export const BUSINESS_INFO = {
-  name: 'Dapurnya. viaaa',
+  name: 'Dapurnya Via',
+  brandName: 'Dapurnya Via',
+  domain: 'dapurnyaviaaa.vercel.app',
+  websiteUrl: 'https://dapurnyaviaaa.vercel.app/',
   tagline: 'Hidangan Rumahan, Rasa Bintang Lima.',
   subTagline: 'Hadirkan Keajaiban Dapur ke Meja Makan Anda.',
   address: 'Jl. Raya Gading Tutuka, Cingcin, Kec. Soreang (Depan Taman Kota Soreang), Bandung, Jawa Barat',
@@ -67,5 +70,5 @@ export const BUSINESS_INFO = {
     totalReviews: '60+',
     recommendationRate: '99%'
   },
-  whatsappNumber: '6281234567890' // Nomor admin Dapurnya viaaa
+  whatsappNumber: '6281234567890' // Nomor admin Dapurnya Via
 };
