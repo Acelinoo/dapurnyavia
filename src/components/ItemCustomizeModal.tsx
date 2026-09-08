@@ -4,7 +4,7 @@ import type { CartItem } from '../types/cart';
 import { X, Plus, Minus, Check } from 'lucide-react';
 
 interface ItemCustomizeModalProps {
-  item: MenuItem | null;
+  item: MenuItem;
   onClose: () => void;
   onAddToCart: (cartItem: CartItem) => void;
 }
@@ -14,8 +14,6 @@ export const ItemCustomizeModal: React.FC<ItemCustomizeModalProps> = ({
   onClose,
   onAddToCart,
 }) => {
-  if (!item) return null;
-
   const [selectedPortion, setSelectedPortion] = useState(
     item.portionOptions ? item.portionOptions[0] : null
   );

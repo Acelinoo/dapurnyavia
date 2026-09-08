@@ -11,6 +11,7 @@ import { LocationSection } from './components/LocationSection';
 import { Footer } from './components/Footer';
 import { CartDrawer } from './components/CartDrawer';
 import { ItemCustomizeModal } from './components/ItemCustomizeModal';
+import { DemoNoticeModal } from './components/DemoNoticeModal';
 
 export const App: React.FC = () => {
   // State Keranjang Belanja dengan Penyimpanan Lokal (LocalStorage)
@@ -136,11 +137,17 @@ export const App: React.FC = () => {
       />
 
       {/* Modal Kustomisasi Porsi & Level Pedas */}
-      <ItemCustomizeModal
-        item={selectedItemForModal}
-        onClose={() => setSelectedItemForModal(null)}
-        onAddToCart={handleAddToCart}
-      />
+      {selectedItemForModal && (
+        <ItemCustomizeModal
+          key={selectedItemForModal.id}
+          item={selectedItemForModal}
+          onClose={() => setSelectedItemForModal(null)}
+          onAddToCart={handleAddToCart}
+        />
+      )}
+
+      {/* Popup Pemberitahuan Website Demo & Kontak GerobakLink */}
+      <DemoNoticeModal />
     </div>
   );
 };
