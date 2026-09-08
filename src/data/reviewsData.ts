@@ -70,5 +70,5 @@ export const BUSINESS_INFO = {
     totalReviews: '60+',
     recommendationRate: '99%'
   },
-  whatsappNumber: '6281234567890' // Nomor admin Dapurnya Via
+  whatsappNumber: '62881022115045' // Nomor admin Dapurnya Via (0881-0221-15045)
 };
